@@ -8,11 +8,20 @@
 Product.delete_all
 # . . .
 Product.create!(
-  title: 'Programming Ruby 1.9 & 2.0',
-  description:%{<p> Ruby is the fastest growing and most exciting dynamic language
-                out there. If you need to get working programs delivered fast,
-                you should add Ruby to your toolbox.
+  title: 'Henessy',
+  description:%{<p> Cool
                 </p>},
-  image_url: 'logo.jpg',
-  price: 49.95)
+  image_url: '3.jpg',
+  price: 100.95)
+
+Product.create!(
+  title: 'Vodka',
+  description:%{<p> VeryCool
+                </p>},
+  image_url: '3.jpg',
+  price: 50.95)
 # . . .
+
+User.delete_all
+User.create(name: 'patron', password: 'patron',
+password_confirmation: 'patron')
